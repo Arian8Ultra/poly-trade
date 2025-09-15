@@ -25,15 +25,7 @@ const HomeHero = ({ parentRef }: Props) => {
         onHoverStart={() => setHover(true)}
         onHoverEnd={() => setHover(false)}
       >
-        <SmokeyCursor
-          autoColors={false}
-          className='-z-10 opacity-50'
-          // transparent={true}
-          enableShading={true}
 
-          // densityDissipation={10}
-          // intensity={0.1}
-        />
         <div
           ref={mainRef}
           // onWheel={handleWheel}
@@ -79,7 +71,7 @@ const HomeHero = ({ parentRef }: Props) => {
               حرفه‌ای توی بازار مالی کار کنی.
             </p>
             <Link href={"https://app.polytrade.ir/signup"}>
-              <Button variant={"accentGlass"}>شروع و ثبت نام</Button>
+              <Button variant={"accent"}>شروع و ثبت نام</Button>
             </Link>
           </motion.div>
         </div>
