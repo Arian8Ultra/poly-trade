@@ -1,13 +1,12 @@
-import { DynamicIcon, IconName } from "lucide-react/dynamic";
-import Image from "next/image";
-import React from "react";
-import TopNavItem from "./TopNavItem";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { IconName } from "lucide-react/dynamic";
+import Image from "next/image";
+import Link from "next/link";
+import TopNavItem from "./TopNavItem";
 
 const TopNav = () => {
   return (
-    <nav className='absolute backdrop-blur-lg top-0 w-full z-50 bg-transparent h-16 flex items-center px-4 py-2'>
+    <nav className='sticky backdrop-blur-lg top-0 w-full z-50 bg-transparent h-16 flex items-center px-4 py-2'>
       <div className='grid grid-cols-2 md:grid-cols-3 w-full items-center'>
         <div className='flex gap-2 items-center'>
           <Image
@@ -48,7 +47,7 @@ const TopNav = () => {
 
 const Pages = [
   { name: "خانه", href: "/", iconName: "home" },
-  { name: "قیمت گذاری", href: "/pricing", iconName: "dollar-sign" },
+  { name: "قیمت گذاری", href: "/pricing", iconName: "coins" },
   { name: "بلاگ", href: "/blog", iconName: "book" },
   { name: "تماس با ما", href: "/contact", iconName: "phone" },
 ] as { name: string; href: string; iconName: IconName }[];

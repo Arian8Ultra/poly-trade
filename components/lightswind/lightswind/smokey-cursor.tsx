@@ -1399,7 +1399,7 @@ export default function SmokeyCursor({
 
     function generateColor(): ColorRGB {
       // rgb(13, 155, 255)
-      return { r: 0.05, g: 0.55, b: 0.9 };
+      return { r: 0.03, g: 0.18, b: 0.4 };
     }
     function HSVtoRGB(h: number, s: number, v: number): ColorRGB {
       let r = 0,
@@ -1549,7 +1549,7 @@ export default function SmokeyCursor({
   ]);
 
   return (
-    <div className='fixed top-0 start-0 end-0 z-50 pointer-events-none h-full cursor-none opacity-50 -z-10'>
+    <div className='absolute top-0 start-0 end-0 z-30 pointer-events-none h-full cursor-none opacity-30 '>
       <canvas
         ref={canvasRef}
         id='fluid'
