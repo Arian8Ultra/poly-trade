@@ -35,7 +35,6 @@ export default function RootLayout({
           forcedTheme='dark'
         >
           <SidebarProvider>
-            <TopNav />
             <main>
               {children}
             </main>
@@ -45,7 +44,7 @@ export default function RootLayout({
                 {
                   label: "قیمت گذاری",
                   href: "/pricing",
-                  iconName: "dollar-sign",
+                  iconName: "coins",
                 },
                 { label: "بلاگ", href: "/blog", iconName: "book" },
                 {
