@@ -24,11 +24,12 @@ const buttonVariants = cva(
           "bg-white/15 backdrop-blur-lg border text-primary hover:bg-white/30 dark:bg-white/10 dark:border-black/20 dark:text-white hover:shadow-[inset_0px_-20px_10px_1px_rgba(255,_255,_255,_0.1)] ",
         accentGlass:
           "bg-accent shadow-[inset_0px_-5px_10px_1px_rgba(255,_255,_255,_0.7)] backdrop-blur-lg border dark:text-white hover:shadow-[inset_0px_-20px_10px_1px_rgba(255,_255,_255,_0.1)]",
+        accent: "bg-accent text-black hover:bg-accent/90 duration-300",
         ghostGlass:
           "bg-tramsparent hover:shadow-[inset_0px_-5px_10px_1px_rgba(255,_255,_255,_0.7)] backdrop-blur-lg border dark:text-white hover:shadow-[inset_0px_-20px_10px_1px_rgba(255,_255,_255,_0.1)]",
       },
       size: {
-        default: "h-9 px-4 py-2 has-[>svg]:px-3",
+        default: "px-4 py-3 has-[>svg]:px-3",
         sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
         icon: "size-9",
