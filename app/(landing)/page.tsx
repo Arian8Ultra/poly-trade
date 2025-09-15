@@ -5,6 +5,7 @@ import HomeFAQ from "@/components/Home/FAQ/HomeFAQ";
 import HomeHero from "@/components/Home/Hero/HomeHero";
 import HomeReason from "@/components/Home/Reason/HomeReason";
 import Footer from "@/components/layout/Footer/Footer";
+import SmokeyCursor from "@/components/lightswind/lightswind/smokey-cursor";
 
 export default async function Page() {
   return (
@@ -21,7 +22,15 @@ export default async function Page() {
         muted
         className='fixed inset-0 w-full h-full object-cover brightness-90  mask-radial-from-0% mask-radial-to-75% mask-radial-at-center -z-10'
       />
+      <SmokeyCursor
+        autoColors={false}
+        className='-z-10 opacity-30'
+        // transparent={true}
+        enableShading={true}
 
+        // densityDissipation={10}
+        // intensity={0.1}
+      />
 
       <HomeHero />
       <HomeDescription />
@@ -29,7 +38,6 @@ export default async function Page() {
       <HomeComments />
       <HomeFAQ />
 
-      <Footer />
     </div>
   );
 }
