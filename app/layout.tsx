@@ -2,7 +2,10 @@ import { ThemeProvider } from "@/components/layout/Theme/ThemeProvider";
 import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
 import "./globals.css";
-
+import TopNav from "@/components/layout/TopNav/TopNav";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import BotNav from "@/components/layout/BotNav/BotNav";
+import Footer from "@/components/layout/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "پلی ترید | Poly Trade",
@@ -30,10 +33,31 @@ export default function RootLayout({
           defaultTheme='system'
           enableSystem
           forcedTheme='dark'
-          disableTransitionOnChange
         >
-          <main>{children}</main>
-          <Toaster />
+          <SidebarProvider>
+            <TopNav />
+            <main>
+              {children}
+            </main>
+            <BotNav
+              items={[
+                { label: "خانه", href: "/", iconName: "home" },
+                {
+                  label: "قیمت گذاری",
+                  href: "/pricing",
+                  iconName: "dollar-sign",
+                },
+                { label: "بلاگ", href: "/blog", iconName: "book" },
+                {
+                  label: "تماس با ما",
+                  href: "/contact",
+                  iconName: "phone",
+                },
+              ]}
+            />
+
+            <Toaster />
+          </SidebarProvider>
         </ThemeProvider>
       </body>
     </html>

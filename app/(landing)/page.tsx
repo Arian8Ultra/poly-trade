@@ -1,9 +1,10 @@
 // "use client";
-import Logo from "@/public/logo.svg";
-import HomeHero from "@/components/Home/Hero/HomeHero";
-import SmokeyCursor from "@/components/lightswind/lightswind/smokey-cursor";
-import Image from "next/image";
+import HomeComments from "@/components/Home/Comments/HomeComments";
 import HomeDescription from "@/components/Home/Description/HomeDescription";
+import HomeFAQ from "@/components/Home/FAQ/HomeFAQ";
+import HomeHero from "@/components/Home/Hero/HomeHero";
+import HomeReason from "@/components/Home/Reason/HomeReason";
+import Footer from "@/components/layout/Footer/Footer";
 
 export default async function Page() {
   return (
@@ -12,31 +13,23 @@ export default async function Page() {
       id='home-container'
       // ref={parentRef}
     >
-      <div className='fixed inset-0' />
+      {/* <div className='fixed inset-0' /> */}
       <video
         src={"/video/Trading.mp4"}
         autoPlay
         loop
         muted
-        className='absolute inset-0 w-full h-full object-cover brightness-90  mask-radial-from-0% mask-radial-to-75% mask-radial-at-center'
+        className='fixed inset-0 w-full h-full object-cover brightness-90  mask-radial-from-0% mask-radial-to-75% mask-radial-at-center -z-10'
       />
 
-      <div className='flex gap-2 fixed md:start-5 start-5 top-5 items-center'>
-        <Image
-          src={"/logo.svg"}
-          width={200}
-          height={200}
-          alt='Nexiino Logo'
-          className='h-fit w-fit '
-        />
-        <p className='text-accent font-sans font-bold text-lg neuropolitical'>Poly Trade</p>
-      </div>
 
       <HomeHero />
       <HomeDescription />
+      <HomeReason />
+      <HomeComments />
+      <HomeFAQ />
 
-      {/* <Home3rd tools={tools} /> */}
-      {/* <Home2nd /> */}
+      <Footer />
     </div>
   );
 }
