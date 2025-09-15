@@ -6,7 +6,7 @@ import TopNavItem from "./TopNavItem";
 
 const TopNav = () => {
   return (
-    <nav className='sticky backdrop-blur-lg top-0 w-full z-50 bg-transparent h-16 flex items-center px-4 py-2'>
+    <nav className='absolute backdrop-blur-lg top-0 w-full z-50 bg-transparent h-16 flex items-center px-4 py-2'>
       <div className='grid grid-cols-2 md:grid-cols-3 w-full items-center'>
         <div className='flex gap-2 items-center'>
           <Image
