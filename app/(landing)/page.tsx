@@ -4,7 +4,6 @@ import HomeDescription from "@/components/Home/Description/HomeDescription";
 import HomeFAQ from "@/components/Home/FAQ/HomeFAQ";
 import HomeHero from "@/components/Home/Hero/HomeHero";
 import HomeReason from "@/components/Home/Reason/HomeReason";
-import Footer from "@/components/layout/Footer/Footer";
 import SmokeyCursor from "@/components/lightswind/lightswind/smokey-cursor";
 
 export default async function Page() {

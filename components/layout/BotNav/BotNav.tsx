@@ -50,7 +50,7 @@ export default function BotNav({
   return (
     <motion.nav
       aria-label='Bottom navigation'
-      className={`fixed bottom-2 left-1/2 -translate-x-1/2 flex items-end gap-4 w-fit rounded-2xl border-2 px-4 pb-2 md:pb-1 backdrop-blur-2xl z-50 md:hidden ${className}`}
+      className={`fixed bottom-2 end-1/2 -translate-x-1/2 flex items-end gap-4 w-fit rounded-2xl border-2 px-4 pb-2 md:pb-1 backdrop-blur-2xl z-50 md:hidden ${className}`}
       initial={false}
       style={{ height: animatedHeight.get() }}
       onMouseMove={({ pageX }) => {

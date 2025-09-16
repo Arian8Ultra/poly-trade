@@ -95,12 +95,12 @@ const ThreeDCarousel = ({
   return (
     <section
       id='ThreeDCarousel'
-      className='bg-transparent min-w-full mx-aut 
+      className='bg-transparent min-w-full mx-auto 
     flex items-center justify-center'
     >
       <div
         className='w-full px-4 sm:px-6 lg:px-8 
-      min-w-[350px] md:min-w-[1000px] max-w-7xl  '
+      min-w-[250px] md:min-w-[1000px] max-w-7xl  '
       >
         <div
           className='relative overflow-hidden h-[550px] '

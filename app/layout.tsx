@@ -1,11 +1,9 @@
+import BotNav from "@/components/layout/BotNav/BotNav";
 import { ThemeProvider } from "@/components/layout/Theme/ThemeProvider";
+import { SidebarProvider } from "@/components/ui/sidebar";
 import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
 import "./globals.css";
-import TopNav from "@/components/layout/TopNav/TopNav";
-import { SidebarProvider } from "@/components/ui/sidebar";
-import BotNav from "@/components/layout/BotNav/BotNav";
-import Footer from "@/components/layout/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "پلی ترید | Poly Trade",

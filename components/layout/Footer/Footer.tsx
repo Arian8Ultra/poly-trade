@@ -8,7 +8,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className='relative w-full min-h-[200px] rounded-t-xl overflow-hidden p-20 flex items-center justify-center pb-32 '>
+    <div className='relative w-full min-h-[200px] rounded-t-xl overflow-hidden p-20 flex items-center justify-center pb-32 max-w-dvw'>
       <Image
         src={"/FooterBg.svg"}
         fill
